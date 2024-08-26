@@ -4,5 +4,6 @@ authors:
 default-perm: false
 version: '1.0-SNAPSHOT'
 main: de.bentzin.manhunt.Manhunt
+has-open-classloader: true
 api-version: '1.21'
 prefix: Manhunt
