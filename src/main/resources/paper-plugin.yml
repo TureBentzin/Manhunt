@@ -1,0 +1,8 @@
+name: Manhunt
+authors:
+  - Ture Bentzin
+default-perm: false
+version: '1.0-SNAPSHOT'
+main: de.bentzin.manhunt.Manhunt
+api-version: '1.21'
+prefix: Manhunt
