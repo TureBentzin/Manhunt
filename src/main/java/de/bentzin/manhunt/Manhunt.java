@@ -1,5 +1,7 @@
 package de.bentzin.manhunt;
 
+import de.bentzin.manhunt.command.CompassCommand;
+import de.bentzin.manhunt.command.SelectCommand;
 import de.bentzin.manhunt.command.TimerCommand;
 import de.bentzin.manhunt.timer.Timer;
 import io.papermc.paper.command.brigadier.Commands;
@@ -28,6 +30,8 @@ public final class Manhunt extends JavaPlugin {
         manager.registerEventHandler(LifecycleEvents.COMMANDS, event -> {
             final Commands commands = event.registrar();
             commands.register("timer", "manage the timer and the game", new TimerCommand());
+            commands.register("select", "select your role", new SelectCommand());
+            commands.register("compass" , "get a compass to track a runner", new CompassCommand());
         });
     }
 
